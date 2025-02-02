@@ -116,7 +116,8 @@ public class ParallelSubsetSum {
             int[] numbers = readNumbersFromFile("inst1000a.txt");
             System.out.println("Successfully read " + numbers.length + " numbers from file");
             
-            int target = 2000; 
+            int target = 2000;
+            System.out.println("Targeting: " + target);
             
             System.out.println("Testing with different thread counts:");
             for (int threads = 1; threads <= 4; threads++) {
