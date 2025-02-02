@@ -5,6 +5,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ParallelSubsetSum {
     private static final long TIMEOUT_SECONDS = 3600;
+    private static final Random random = new Random();
+    
+    public static int generateRandomTarget() {
+        return random.nextInt(901) + 100;
+    }
     
     public static int[] readNumbersFromFile(String filePath) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
@@ -113,13 +118,15 @@ public class ParallelSubsetSum {
     
     public static void main(String[] args) {
         try {
-            int[] numbers = readNumbersFromFile("inst1000a.txt");
+            int[] numbers = readNumbersFromFile("inst5000a.txt");
             System.out.println("Successfully read " + numbers.length + " numbers from file");
             
-            int target = 2000;
-            System.out.println("Targeting: " + target);
+            int target = generateRandomTarget();
+            System.out.println("\nTarget sum: " + target);
             
-            System.out.println("Testing with different thread counts:");
+            System.out.println("\nTesting with different thread counts:");
+            System.out.println("-----------------------------------");
+            
             for (int threads = 1; threads <= 4; threads++) {
                 long startTime = System.currentTimeMillis();
                 int count = findSubsetCount(numbers, target, threads);
