@@ -1,7 +1,15 @@
 # Sistemas Distribuídos - Processamento Paralelo
 
+## Índice
+- [Introdução](#introducao)
+- [Estrutura do Código](#estrutura-do-codigo)
+- [Funcionamento do Algoritmo](#funcionamento-do-algoritmo)
+- [Testes](#testes)
+- [Conclusão](#conclusao)
+- [Dupla](#dupla)
+
 ## Introdução
-O programa `ParallelSubsetSum` tem como objetivo encontrar subconjuntos de um conjunto de números que somem a um valor alvo. A implementação utiliza paralelismo para melhorar a eficiência da busca, dividindo a carga de trabalho entre múltiplas threads.
+Este programa tem como objetivo encontrar subconjuntos de um conjunto de números que somem a um valor alvo. A implementação utiliza paralelismo para melhorar a eficiência da busca, dividindo a carga de trabalho entre múltiplas threads.
 
 ## Estrutura do Código
 
@@ -46,6 +54,24 @@ Cada thread processa um segmento do array de entrada e calcula, de forma indepen
 
 A implementação garante que todas as combinações possíveis sejam testadas, respeitando a ordem dos elementos e garantindo que cada subconjunto seja contado uma única vez.
 
-## Conclusão
-O programa `ParallelSubsetSum` utiliza paralelismo para acelerar a busca por subconjuntos que somam a um valor alvo. Apesar de a complexidade do problema ser alta, a divisão da carga entre threads reduz o tempo de execução. No entanto, para conjuntos muito grandes, a abordagem ainda pode ser ineficiente, sendo necessárias técnicas mais avançadas como poda de busca ou programação dinâmica para otimização adicional.
+## Testes 
 
+
+## Conclusão
+O programa utiliza paralelismo para acelerar a busca por subconjuntos que somam a um valor alvo. Apesar de a complexidade do problema ser alta, a divisão da carga entre threads reduz o tempo de execução. No entanto, para conjuntos muito grandes, a abordagem ainda pode ser ineficiente, sendo necessárias técnicas mais avançadas como poda de busca ou programação dinâmica para otimização adicional.
+
+## Dupla
+<table align="center">
+  <tr align="center">
+  <td>
+      <a href="https://github.com/Caiqueferlima">
+        <img src="https://avatars.githubusercontent.com/u/130234796?v=4" width=100 />
+        <p>Caíque <br/>Fernandes</p>
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/RafaelSantosIF">
+        <img src="https://avatars.githubusercontent.com/RafaelSantosIF" width=100 />
+        <p>Rafael <br/>Santos</p>
+      </a>
+  </tr>
